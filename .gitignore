@@ -56,3 +56,7 @@ Thumbs.db
 # Experiment Tracking & Training Logs
 *.log
 runs/
+
+# Firebase CLI cache
+.firebase/
+firebase-debug.log*

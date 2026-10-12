@@ -10,11 +10,12 @@
 [![Vite](https://img.shields.io/badge/Vite-5.0-646CFF.svg?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC.svg?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-neurascan--ai.web.app-brightgreen.svg?logo=firebase&logoColor=white)](https://neurascan-ai.web.app)
 [![Status](https://img.shields.io/badge/Clinical%20AI-Research%20Grade-success.svg)]()
 
 **A dual-tier deep learning neuroimaging platform that classifies brain MRI scans across 4 pathology types with 97%+ accuracy and explains every decision using Grad-CAM attention heatmaps.**
 
-[Key Features](#-key-features) • [The Story & Creation](#-the-creation-story--how-neurascan-was-born) • [Tumor Classes](#-tumor-classes--pathology-deep-dive) • [Website Showcase](#-website-sections--visual-showcase) • [Architecture](#-dual-tier-model-architecture) • [Getting Started](#-quick-start--installation)
+[🌐 Live Web Demo](https://neurascan-ai.web.app) • [Key Features](#-key-features) • [The Story & Creation](#-the-creation-story--how-neurascan-was-born) • [Tumor Classes](#-tumor-classes--pathology-deep-dive) • [Website Showcase](#-website-sections--visual-showcase) • [Architecture](#-dual-tier-model-architecture) • [Getting Started](#-quick-start--installation)
 
 </div>
 
