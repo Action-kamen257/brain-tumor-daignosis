@@ -1,0 +1,57 @@
+================================================================================
+                    BRAIN TUMOR DETECTION (NEURASCAN)
+                           RUN INSTRUCTIONS
+================================================================================
+
+PREREQUISITES:
+1. Python environment (.venv) with required packages:
+   - Flask, Flask-CORS, PyTorch, TorchVision, OpenCV, Pillow, NumPy
+2. Node.js & npm (for the React/Vite frontend)
+
+--------------------------------------------------------------------------------
+HOW TO RUN (OPTION 1: AUTOMATIC BATCH SCRIPT)
+--------------------------------------------------------------------------------
+You can rename this file to 'run.bat' or run 'run.bat' directly, which contains:
+
+@echo off
+echo ============================================================
+echo Starting NeuraScan Brain Tumor Detection System...
+echo ============================================================
+
+echo [1/2] Launching Flask Backend on http://localhost:8000 ...
+start "NeuraScan Backend" cmd /k "cd /d %~dp0 && .\.venv\Scripts\python.exe app.py"
+
+echo [2/2] Launching React Vite Frontend on http://localhost:3000 ...
+start "NeuraScan Frontend" cmd /k "cd /d %~dp0brain-tumor-app && npm run dev"
+
+echo.
+echo Application is starting!
+echo - Frontend: http://localhost:3000
+echo - Backend:  http://localhost:8000
+echo ============================================================
+
+--------------------------------------------------------------------------------
+HOW TO RUN (OPTION 2: MANUAL COMMANDS)
+--------------------------------------------------------------------------------
+
+TERMINAL 1 (Backend - Flask):
+  cd d:\tushar\ML\bbt
+  .\.venv\Scripts\python.exe app.py
+
+TERMINAL 2 (Frontend - React / Vite):
+  cd d:\tushar\ML\bbt\brain-tumor-app
+  npm run dev
+
+--------------------------------------------------------------------------------
+HOW TO RUN (OPTION 3: POWERSHELL ONE-LINER)
+--------------------------------------------------------------------------------
+Run these two commands in PowerShell from the project root (d:\tushar\ML\bbt):
+
+  Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd '$PWD'; .\.venv\Scripts\python.exe app.py"
+  Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd '$PWD\brain-tumor-app'; npm run dev"
+
+--------------------------------------------------------------------------------
+URLS:
+- Frontend UI: http://localhost:3000
+- Backend API: http://localhost:8000 (Health Check: http://localhost:8000/health)
+================================================================================
